@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Temperature Converter</string>
+    <string name="todo">TODO</string>
+    <string name="c2f">CELSIUS TO FAHRENHEIT</string>
+    <string name="f2c">FAHRENHEIT TO CELSIUS</string>
+    <string name="enter_f"> Enter Fahrenheit</string>
+    <string name="enter_celsius"> Enter Celsius</string>
+    <string name="made_in_india_with_love">Made In India With Love</string>
+</resources>

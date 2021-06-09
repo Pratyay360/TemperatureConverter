@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#F4F3F3"
+    tools:context=".C2F">
+
+    <Button
+        android:id="@+id/f2c"
+        android:layout_width="476dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/button_large"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans1"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="963dp"
+        android:layout_height="307dp"
+        android:background="@drawable/component_1__1"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:text="@string/c2f"
+        android:textColor="#FBFBFB"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="648dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/path_11"
+        android:ems="10"
+        android:hint="@string/enter_celsius"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:paddingStart="25dp"
+        android:scaleType="fitXY"
+        android:textColor="#000000"
+        android:textColorHint="#E60E0A0A"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="449dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/convert"
+        android:hapticFeedbackEnabled="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/c2f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entry"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <TextView
+        android:id="@+id/ans1"
+        android:layout_width="653dp"
+        android:layout_height="572dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/path_643"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:textColor="#FF0101"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.186" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
