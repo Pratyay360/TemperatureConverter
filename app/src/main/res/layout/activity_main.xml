@@ -10,15 +10,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="365dp"
-        android:layout_height="233dp"
-        android:layout_marginTop="160dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:contentDescription="@string/todo"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/matteo_fusco_4zvnt60_pak_unsplash" />
 
     <Button
@@ -33,7 +32,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.327" />
+        app:layout_constraintVertical_bias="0.509" />
 
     <Button
         android:id="@+id/f2c"
@@ -48,15 +47,14 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.768" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="408dp"
-        android:layout_height="110dp"
+        android:layout_width="0dp"
+        android:layout_height="118dp"
         android:background="@drawable/component_1__1"
         android:gravity="center"
-        android:scaleType="fitXY"
         android:text="@string/app_name"
         android:textColor="#FBFBFB"
         android:textSize="30sp"

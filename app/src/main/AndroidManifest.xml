@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TemperatureConverter">
-        <activity android:name=".C2F"></activity>
+        <activity android:name=".C2F" />
         <activity android:name=".F2C" />
         <activity android:name=".SplashActivity" >
         <intent-filter>
@@ -19,6 +19,11 @@
         </intent-filter>
     </activity>
         <activity android:name=".MainActivity"/>
+
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
 
     </application>
 

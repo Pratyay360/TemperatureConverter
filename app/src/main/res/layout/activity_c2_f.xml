@@ -10,22 +10,22 @@
 
     <Button
         android:id="@+id/f2c"
-        android:layout_width="248dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/button_large"
         android:hapticFeedbackEnabled="true"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ans1"
-        app:layout_constraintVertical_bias="0.849" />
+        app:layout_constraintVertical_bias="0.332" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="409dp"
-        android:layout_height="96dp"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
         android:background="@drawable/component_1__1"
         android:gravity="center"
         android:scaleType="fitXY"
@@ -39,18 +39,19 @@
 
     <EditText
         android:id="@+id/entry"
-        android:layout_width="329dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/path_11"
         android:ems="10"
         android:hint="@string/enter_celsius"
         android:importantForAutofill="no"
-        android:inputType="numberSigned"
+        android:inputType="numberDecimal"
         android:paddingStart="15dp"
         android:scaleType="fitXY"
         android:textColor="#000000"
         android:textColorHint="#E60E0A0A"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -59,32 +60,41 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/convert"
         android:hapticFeedbackEnabled="true"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/c2f"
+        app:layout_constraintBottom_toTopOf="@+id/ans1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/entry"
-        app:layout_constraintVertical_bias="0.083" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/ans1"
-        android:layout_width="309dp"
-        android:layout_height="216dp"
-        android:layout_marginBottom="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_marginTop="130dp"
         android:background="@drawable/path_643"
         android:gravity="center"
         android:scaleType="fitXY"
+        android:textIsSelectable="true"
         android:textColor="#FF0101"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintTop_toBottomOf="@+id/entry" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:background="@drawable/arrow_right__1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/f2c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

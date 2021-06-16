@@ -11,14 +11,18 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button c2f, f2c;
-
-
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(MainActivity.this, "App Exited", Toast.LENGTH_SHORT).show();
+        Intent a = new Intent(Intent.ACTION_MAIN);
+        a.addCategory(Intent.CATEGORY_HOME);
+        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(a);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Toast.makeText(this, "Created By Pratyay",Toast.LENGTH_SHORT).show();
         c2f = findViewById(R.id.c2f);
         f2c = findViewById(R.id.f2c);
         c2f.setOnClickListener(new View.OnClickListener() {
